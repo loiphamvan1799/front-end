@@ -11,12 +11,14 @@ pipeline{
             steps{
                 echo 'this is the first job'
                 sh 'npm install'
+                sleep 4
             }
         }
         stage('test'){
             steps{
                 echo 'this is the second job'
                 sh 'npm test'
+                sleep 9
             }
         }
         stage('package'){
