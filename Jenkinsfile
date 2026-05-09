@@ -1,10 +1,6 @@
 pipeline{
 
-    agent any
-
-    tools{
-       maven 'Maven 3.9.15' 
-    }    
+    agent any 
 
     stages{
         stage('build'){
