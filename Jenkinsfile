@@ -2,6 +2,10 @@ pipeline{
 
     agent any 
 
+    tools {
+        nodejs 'NodeJS 20.19.1'
+    }
+
     stages{
         stage('build'){
             steps{
